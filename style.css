@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');   
+
+
+#meme-image-container {
+    position: relative;
+    background-color: white;
+    height: 510px;
+    width: 610px;
+}
+
+.inicial {
+    border: 1px solid black;
+}
+
+#meme-image {
+    height: 500px;
+    width: 600px;
+}
+
+.meme {
+    height: 500px;
+    width: 600px;
+}
+
+#meme-text {
+    position: absolute;
+    text-align: center;
+    word-break: break-all;
+    top: 400px;
+    left: 10px;
+    right: 10px;
+    text-shadow: 5px 5px 5px black;
+    font-size: 30px;
+    color: white;
+    font-family:'Bangers', cursive;
+}
+
+#fire {
+    background-color: red;
+}
+
+#water {
+    background-color: blue;
+}
+
+#earth {
+    background-color: green;
+}
+
+.fire {
+    border: 3px dashed red ;
+}
+
+.water {
+    border: 5px double blue ;
+}
+
+.earth {
+    border: 6px groove green
+}
+
