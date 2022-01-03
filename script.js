@@ -4,6 +4,7 @@ const upImage = document.getElementById('meme-insert');
 let  divImage = document.getElementById('meme-image');
 const memeContainer = document.getElementById("meme-image-container") 
 const botoes = document.getElementsByClassName('botao')
+const miniaturas = document.getElementById('miniaturas')
 
 
 input.addEventListener('input', function() { 
@@ -13,13 +14,11 @@ input.addEventListener('input', function() {
 
 // https://dev.to/shantanu_jana/how-to-preview-image-before-uploading-in-javascript-1f6g
 
-upImage.addEventListener('input', upLoadImage)
-function upLoadImage() {
+// Sugestão Paula Ribeiro
+upImage.addEventListener('change', upLoadImage)
+function upLoadImage() {    
     let url = URL.createObjectURL(upImage.files[0]);
-    let image = document.createElement('img');
-    image.classList.add('meme');
-    image.src = url;
-    divImage.appendChild(image); 
+    divImage.src = url
 }
 
 for (let index = 0; index < botoes.length; index += 1) {
@@ -30,11 +29,23 @@ function trocaBorda(event) {
         let click = event.target.id;
         memeContainer.className = "";
         memeContainer.classList.add(click);
-    }
-    
-     
+    }     
 }
-   
+
+miniaturas.addEventListener('click', memeDefault)
+
+// Sugestão de Paula Ribeiro
+function memeDefault(event) {
+    if (event.target != event.currentTarget) {
+    let src = event.target.getAttribute('src')
+    divImage.src = src
+}
+    
+}
+
+
+ 
+
 
 
 

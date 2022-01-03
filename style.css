@@ -1,21 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');   
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1.5px);
+    
+
+    
+}
 
 #meme-image-container {
+    margin: auto;
     position: relative;
     background-color: white;
-    height: 510px;
-    width: 610px;
+    height: 500px;
+    width: 600px;
+    
 }
 
 .inicial {
     border: 1px solid black;
 }
 
-#meme-image {
-    height: 500px;
-    width: 600px;
+#meme-insert {
+    width: 118px;
+    overflow: hidden;
+    margin: 30px;
 }
+
+.botao {
+    margin: 15px;
+    padding: 2%;
+    
+}
+
+/* Kevlerson Eller */
+#meme-image {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    
+}
+
+
 
 .meme {
     height: 500px;
@@ -59,3 +93,16 @@
     border: 6px groove green
 }
 
+#miniaturas img {
+    height: 80px;
+    width: 80px;
+    margin: 8px;
+    padding-top: 15px;
+}
+
+#miniaturas img:hover {
+    height: 83px;
+    width: 83px;
+
+
+}
